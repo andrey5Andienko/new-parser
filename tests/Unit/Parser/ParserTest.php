@@ -43,7 +43,7 @@ class ParserTest extends TestCase
 
         $this->parser::setParsers($parsers);
 
-        $this->assertEquals($expected, $this->parser->__invoke($content));
+        $this->assertSame($expected, $this->parser->__invoke($content));
 
     }
 }

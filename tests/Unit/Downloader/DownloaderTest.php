@@ -21,7 +21,7 @@ class DownloaderTest extends TestCase
 
         $actual = iterator_to_array($downloader->download(...['/', '/', '/', '/']));
 
-        $this->assertEquals($expectedContent, $actual);
+        $this->assertSame($expectedContent, $actual);
     }
 
     public function getClient(array $contents)
